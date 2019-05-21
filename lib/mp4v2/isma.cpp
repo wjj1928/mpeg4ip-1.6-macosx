@@ -29,6 +29,8 @@
 
 #include "mp4common.h"
 
+#pragma GCC diagnostic ignored "-Wformat"
+
 static const u_int8_t BifsV2Config[3] = {
 	0x00, 0x00, 0x60 // IsCommandStream = 1, PixelMetric = 1
 };

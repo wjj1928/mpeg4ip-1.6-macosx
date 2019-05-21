@@ -1,7 +1,7 @@
 #include "mpeg4ip.h"
 #include "mp4v2/mp4.h"
 #include <mpeg4ip_bitstream.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 void CheckProgramConfigElement (CBitstream *bs) {
   uint32_t temp, i, num_front_channel_elements, num_side_channel_elements, num_back_channel_elements;
   uint32_t num_lfe_channel_elements, num_assoc_data_elements, num_valid_cc_elements;

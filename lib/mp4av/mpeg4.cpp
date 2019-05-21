@@ -25,7 +25,7 @@
  */
 
 #include <mp4av_common.h>
-
+#pragma GCC diagnostic ignored "-Wlogical-op-parentheses"
 extern "C" int32_t MP4AV_Mpeg4FindHeader (const uint8_t *pStart, 
 					  uint32_t buflen,
 					  bool do_header_type, 

@@ -27,7 +27,7 @@
 #include "player_util.h"
 //#define DEBUG_MP4_FRAME 1
 //#define DEBUG_H264_NALS 1
-
+#pragma GCC diagnostic ignored "-Wformat"
 /**************************************************************************
  * Quicktime stream base class functions
  **************************************************************************/

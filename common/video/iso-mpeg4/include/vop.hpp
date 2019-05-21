@@ -42,7 +42,7 @@ Revision History:
 
 
 #include <stdio.h>
-
+#pragma GCC diagnostic ignored "-Wtautological-undefined-compare"
 class CU8Image;
 class CFloatImage;
 class CIntImage;

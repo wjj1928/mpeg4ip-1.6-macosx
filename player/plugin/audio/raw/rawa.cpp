@@ -22,6 +22,7 @@
 #include <mp4v2/mp4.h>
 #include <mpeg2ps/mpeg2_ps.h>
 #define LOGIT rawa->m_vft->log_msg
+#pragma GCC diagnostic ignored "-Wlogical-op-parentheses"
 /*
  * Create raw audio structure
  */

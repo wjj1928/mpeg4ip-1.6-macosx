@@ -24,7 +24,7 @@
 #include <time.h>
 #include "mpeg2_ps.h"
 #include "mpeg2ps_private.h"
-
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
 static int mpeg2ps_debug_level = LOG_ALERT;
 static error_msg_func_t mpeg2ps_error_msg = NULL;
 

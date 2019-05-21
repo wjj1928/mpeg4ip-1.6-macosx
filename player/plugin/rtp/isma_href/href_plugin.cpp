@@ -22,7 +22,7 @@
 #include "href_plugin.h"
 #include "rtp.h"
 //#define DEBUG_HREF 1
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 #define href_message iptr->m_vft->log_msg
 //static const char *hrefrtp="hrefrtp";
 

@@ -54,7 +54,8 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wshift-op-parentheses"
+#pragma GCC diagnostic ignored "-Wunused-const-variable"
 CBlockDCT::~CBlockDCT ()
 {
 /* NBIT: change

@@ -2,6 +2,11 @@
 #include "mpeg4ip_getopt.h"
 #include "mpeg4ip_config_set.h"
 
+struct option *create_long_opts_from_config (CConfigSet *pConfig,
+					     struct option *orig_opts,
+					     uint32_t orig_opts_size,
+					     uint32_t base_offset);
+
 
 struct option *create_long_opts_from_config (CConfigSet *pConfig,
 					     struct option *orig_opts,

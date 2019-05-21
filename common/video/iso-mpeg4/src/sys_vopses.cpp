@@ -87,7 +87,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wmismatched-new-delete"
 CVideoObject::~CVideoObject ()
 {
 	delete m_pvopcCurrQ;

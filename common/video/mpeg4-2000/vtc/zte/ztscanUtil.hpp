@@ -54,7 +54,7 @@
 /************************************************************/
 
 #ifndef _ZTSCAN_UTIL_H_
-#define _ZTSCAN_UTIL_H
+#define _ZTSCAN_UTIL_H_
 
 #include "basic.hpp"
 

@@ -66,7 +66,7 @@
 #include "p64-huff.h"
 #include "dct.h"
 
-
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
 P64Dumper::P64Dumper(int q)
 {
 	dump_quantized_ = q;

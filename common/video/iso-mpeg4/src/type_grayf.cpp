@@ -52,7 +52,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #define new DEBUG_NEW				   
 #endif // __MFC_
 
-
+#pragma GCC diagnostic ignored "-Wundefined-bool-conversion"
 CFloatImage::~CFloatImage ()
 {
 	delete [] m_ppxlf;

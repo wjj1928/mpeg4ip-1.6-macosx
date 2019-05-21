@@ -29,7 +29,8 @@
 #include <mp4creator.h>
 
 #define ADTS_HEADER_MAX_SIZE 10 /* bytes */
-
+#pragma GCC diagnostic ignored "-Wformat"
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static u_int8_t firstHeader[ADTS_HEADER_MAX_SIZE];
 static u_int16_t OLD_MP4AV_AdtsGetFrameSize(u_int8_t* pHdr)
 {

@@ -32,7 +32,7 @@
  */
 
 #include <mp4creator.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 typedef struct mpeg4_frame_t {
   mpeg4_frame_t *next;
   MP4Timestamp frameTimestamp;

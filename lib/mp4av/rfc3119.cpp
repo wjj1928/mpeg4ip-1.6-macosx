@@ -25,7 +25,7 @@
  */
 
 #include <mp4av_common.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 // LATER get these on the stack so library is thread-safe!
 // file globals
 static bool doInterleave;

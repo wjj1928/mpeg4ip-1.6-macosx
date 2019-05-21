@@ -108,7 +108,7 @@ static Int STUFFING_CNT=22;  //setting for error resi case
 //static Void mzte_update_model(ac_model *,ac_model *,Int);
 //static Int mzte_input_bit(ac_decoder *);
 
-
+#pragma GCC diagnostic ignored "-Wswitch-bool"
 static Int zeroStrLen=0;
 
 /************************************************************************/

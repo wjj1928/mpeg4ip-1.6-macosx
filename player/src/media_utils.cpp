@@ -48,6 +48,7 @@
 /*
  * these are lists of supported audio and video codecs
  */
+#pragma GCC diagnostic ignored "-Wformat"
 static struct codec_list_t {
   const char *name;
   int val;
@@ -610,7 +611,7 @@ static int create_media_for_iptv (CPlayerSession *psptr,
   session_desc_t *sdp;
 
   name += strlen("iptv://");
-  slash = strchr(name, '/');
+  slash = (char*)strchr(name, '/');
   if (slash == NULL || slash == name) {
     psptr->set_message("Invalid iptv content manager");
     return -1;

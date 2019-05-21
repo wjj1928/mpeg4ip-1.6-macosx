@@ -69,7 +69,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wdangling-else"
 own Int* CVideoObject::computeShapeSubBlkIndex (Int iSubBlkSize, Int iSrcSize)
 {
 	Int* rgiShapeSubBlkIndex = new Int [MB_SIZE * MB_SIZE / iSubBlkSize / iSubBlkSize];

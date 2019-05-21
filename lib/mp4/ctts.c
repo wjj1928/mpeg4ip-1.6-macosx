@@ -21,7 +21,7 @@
 
 #include "quicktime.h"
 
-
+#pragma GCC diagnostic ignored "-Wreturn-type"
 int quicktime_ctts_init(quicktime_ctts_t *ctts)
 {
 	ctts->version = 0;

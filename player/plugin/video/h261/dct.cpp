@@ -59,7 +59,8 @@
 /* Sick little macro which will limit x to [0..255] with logical ops */
 #define LIMIT8(x, t) ((t = (x)), (t &= ~(t>>31)), (t | ~((t-256) >> 31)))
 #define LIMIT(x, t) (LIMIT8((x), t) & 0xff)
-
+#pragma GCC diagnostic ignored "-Wshift-op-parentheses"
+#pragma GCC diagnostic ignored "-Wunused-const-variable"
 /* row order */
 /*
 static const u_char ROWZAG[] = {

@@ -5,7 +5,7 @@
 #include "mp4av.h"
 // strip_filename.  In buffer (should be MAXPATHLEN), store the
 // filename, without the path, and without the suffix.
-
+#pragma GCC diagnostic ignored "-Wformat"
 #define BUFFER_SIZE (1000 * 188)
 int main (int argc, char **argv)
 {

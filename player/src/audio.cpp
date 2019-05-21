@@ -37,7 +37,7 @@ DEFINE_MESSAGE_MACRO(audio_message, "audiosync")
 #define audio_message(loglevel, fmt...) message(loglevel, "audiosync", fmt)
 #endif
 
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 
 // Sync task api - initialize the sucker.
 // May need to check out non-standard frequencies, see about conversion.

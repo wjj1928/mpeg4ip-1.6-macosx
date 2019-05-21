@@ -23,7 +23,7 @@
 #include "mp4av.h"
 
 //#define DEBUG_MPEG3_HINT 1
-
+#pragma GCC diagnostic ignored "-Wformat"
 static double mpeg3_frame_rate_table[16] =
 {
   0.0,   /* Pad */

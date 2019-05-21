@@ -43,7 +43,7 @@ Revision History:
 typedef Float PixelF;
 
 #define MAX_NUM_CONTOUR 200
-
+#pragma GCC diagnostic ignored "-Wtautological-undefined-compare"
 class CVideoObjectPlane;
 
 class CFloatImage

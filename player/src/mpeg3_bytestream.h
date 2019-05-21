@@ -28,7 +28,8 @@
 #include "our_bytestream.h"
 #include "player_util.h"
 //#define OUTPUT_TO_FILE 1
-
+#pragma GCC diagnostic ignored "-Wunused-private-field"
+#pragma GCC diagnostic ignored "-Wformat"
 /*
  * CMp4ByteStreamBase provides base class access to quicktime files.
  * Most functions are shared between audio and video.

@@ -20,7 +20,7 @@
  */
 
 #include <mp4av_common.h>
-
+#pragma GCC diagnostic ignored "-Wformat"
 #define DEBUG_L16 1
 extern "C" bool L16Hinter (MP4FileHandle mp4file, 
 			   MP4TrackId trackid,

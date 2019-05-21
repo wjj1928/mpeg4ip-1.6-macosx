@@ -28,6 +28,8 @@
 #include "mpeg4ip_getopt.h"
 #include "mp4av.h"
 #include "mp4av_h264.h"
+
+#pragma GCC diagnostic ignored "-Wformat"
 char* ProgName;
 char* Mp4PathName;
 char* Mp4FileName;

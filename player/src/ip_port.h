@@ -25,7 +25,7 @@
  */
 #ifndef __IP_PORT_H__
 #define __IP_PORT_H__ 1
-
+#pragma GCC diagnostic ignored "-Wunused-private-field"
 // CIpPort will grab the next ip port available when created (and valid).
 // It will hold on to the port until deleted.
 class CIpPort {

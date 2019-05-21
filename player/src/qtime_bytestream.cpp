@@ -26,7 +26,7 @@
 #include "mpeg4ip.h"
 #include "qtime_bytestream.h"
 #include "player_util.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 /**************************************************************************
  * Quicktime stream base class functions
  **************************************************************************/

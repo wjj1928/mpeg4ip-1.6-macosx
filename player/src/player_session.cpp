@@ -39,7 +39,7 @@ DEFINE_MESSAGE_MACRO(sync_message, "avsync")
 #else
 #define sync_message(loglevel, fmt...) message(loglevel, "avsync", fmt)
 #endif
-
+#pragma GCC diagnostic ignored "-Wformat"
 CPlayerSession::CPlayerSession (CMsgQueue *master_mq, 
 				SDL_sem *master_sem,
 				const char *name,

@@ -37,7 +37,7 @@
  */
 
 #include "mp4common.h"
-
+#pragma GCC diagnostic ignored "-Wnon-literal-null-conversion"
 #define PRINT_ERROR(e) \
 	VERBOSE_ERROR(((MP4File*)hFile)->GetVerbosity(), e->Print());
 

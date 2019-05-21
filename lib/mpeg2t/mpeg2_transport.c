@@ -24,7 +24,7 @@
 #include "mpeg2_transport.h"
 #include <assert.h>
 #include "mpeg2t_private.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 //#define DUMP_ADAPTION_CONTROL 1
 #define DEBUG 1
 #ifdef DEBUG

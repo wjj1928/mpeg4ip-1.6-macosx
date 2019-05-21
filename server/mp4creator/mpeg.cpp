@@ -21,7 +21,7 @@
  */
 #include "mp4creator.h"
 #include "mpeg2_ps.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static MP4TrackId VideoCreate (MP4FileHandle mp4file, 
 			       mpeg2ps_t *file, 
 			       int vstream,

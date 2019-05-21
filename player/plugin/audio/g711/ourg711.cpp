@@ -24,6 +24,7 @@
 #define LOGIT g711->m_vft->log_msg
 static int16_t alaw2linear(uint8_t a_val);
 static int16_t ulaw2linear(uint8_t u_val);
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 /*
  * Create raw audio structure
  */

@@ -47,7 +47,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 
 CVOPIntYUVBA::~CVOPIntYUVBA ()
 {

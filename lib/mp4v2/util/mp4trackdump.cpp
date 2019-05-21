@@ -26,7 +26,7 @@
 
 #include "mp4.h"
 #include "mpeg4ip_getopt.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 char* ProgName;
 char* Mp4PathName;
 char* Mp4FileName;

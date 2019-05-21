@@ -57,7 +57,7 @@ typedef unsigned char PixelC;
 #endif
 
 class CVideoObjectPlane;
-
+#pragma GCC diagnostic ignored "-Wtautological-undefined-compare"
 class CU8Image
 {
 public:

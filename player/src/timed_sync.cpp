@@ -21,7 +21,7 @@
 
 #include "sync.h"
 #include "mpeg4ip_utils.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 CTimedSync::CTimedSync (const char *name, 
 			CPlayerSession *psptr) : CSync(psptr)
 {

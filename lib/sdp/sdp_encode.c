@@ -29,7 +29,7 @@
  */
 #include "sdp.h"
 #include "sdp_decode_private.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 typedef struct sdp_encode_t {
   char *buffer;
   uint32_t used;

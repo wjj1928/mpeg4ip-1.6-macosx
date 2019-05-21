@@ -24,6 +24,8 @@
 #include "mpeg4ip_bitstream.h"
 //#define BOUND_VERBOSE 1
 
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
+
 static uint8_t exp_golomb_bits[256] = {
 8, 7, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 3, 
 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 
@@ -200,7 +202,7 @@ static void scaling_list (uint sizeOfScalingList, CBitstream *bs)
       nextScale = (lastScale + deltaScale + 256) % 256;
     }
     if (nextScale == 0) {
-      lastScale = lastScale;
+      //lastScale = lastScale;
     } else {
       lastScale = nextScale;
     }

@@ -44,12 +44,11 @@ Revision History:
 
 #ifndef __YUVAC_HPP_
 #define __YUVAC_HPP_
-
 class CVideoObjectPlane;
 class CU8Image;
 class CAffine2D;
 class CPerspective2D;
-
+#pragma GCC diagnostic ignored "-Wtautological-undefined-compare"
 class CVOPU8YUVBA
 {
 public:

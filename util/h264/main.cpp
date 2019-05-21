@@ -23,7 +23,8 @@
 #include "mpeg4ip_bitstream.h"
 #include <math.h>
 #include "mp4av_h264.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
+#pragma GCC diagnostic ignored "-Wself-assign"
 #define H264_START_CODE 0x000001
 #define H264_PREVENT_3_BYTE 0x000003
 

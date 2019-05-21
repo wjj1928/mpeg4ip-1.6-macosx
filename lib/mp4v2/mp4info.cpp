@@ -26,7 +26,7 @@
  */
 
 #include "mp4common.h"
-
+#pragma GCC diagnostic ignored "-Wtautological-pointer-compare"
 static char* PrintAudioInfo(
 	MP4FileHandle mp4File,
 	MP4TrackId trackId)

@@ -25,7 +25,7 @@
 #include <sdp/sdp.h> // for NTP_TO_UNIX_TIME
 #include "rtp_bytestream.h"
 #include "our_config_file.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 //#define DEBUG_RTP_PAKS 1
 //#define DEBUG_RTP_FRAMES 1
 //#define DEBUG_RTP_BCAST 1

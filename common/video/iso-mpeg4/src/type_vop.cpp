@@ -58,7 +58,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #endif // __MFC_
 
 Int numPln = 4;
-
+#pragma GCC diagnostic ignored "-Wundefined-bool-conversion"
 CVideoObjectPlane::~CVideoObjectPlane ()
 {
 	delete [] m_ppxl;

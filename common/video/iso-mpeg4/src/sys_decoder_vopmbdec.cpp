@@ -108,7 +108,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #endif
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wsometimes-uninitialized"
 Bool CVideoObjectDecoder::checkGOBMarker()
 {
   Int iBitsLeft; // = 8 - (m_pbitstrmIn->getCounter() & 7);

@@ -23,7 +23,7 @@
 #include "h261_userdata.h"
 #include "rtp/rtp.h"
 //#define DEBUG_H261
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 #define h261_message iptr->m_vft->log_msg
 static const char *h261rtp="h261rtp";
 

@@ -23,6 +23,8 @@
 #define __MP4_UTIL_INCLUDED__
 #include <assert.h>
 
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
+
 #ifndef ASSERT
 #define ASSERT(expr) \
 	if (!(expr)) { \

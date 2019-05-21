@@ -32,7 +32,7 @@
 #define AMR_UNINITIALIZED -1
 #define AMR_TRUE 0
 #define AMR_FALSE 1
-
+#pragma GCC diagnostic ignored "-Wformat"
 MP4Track::MP4Track(MP4File* pFile, MP4Atom* pTrakAtom) 
 {
 	m_pFile = pFile;

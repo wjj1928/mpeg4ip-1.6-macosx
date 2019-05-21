@@ -39,7 +39,7 @@
 #include "mpeg4ip_getopt.h"
 #include "mpeg2t/mpeg2_transport.h"
 #include "mpeg2ps/mpeg2_ps.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static int session_paused;
 static int screen_size = 2;
 static bool fullscreen = false;

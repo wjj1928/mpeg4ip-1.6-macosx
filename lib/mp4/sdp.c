@@ -21,7 +21,7 @@
 
 #include "quicktime.h"
 
-
+#pragma GCC diagnostic ignored "-Wreturn-type"
 int quicktime_sdp_init(quicktime_sdp_t *sdp)
 {
         sdp->string = NULL;

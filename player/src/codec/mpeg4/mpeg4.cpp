@@ -43,7 +43,7 @@
 
 #include <mp4v2/mp4.h>
 #include <mp4av/mp4av.h>
-
+#pragma GCC diagnostic ignored "-Wlogical-op-parentheses"
 #define iso_message (iso->m_vft->log_msg)
 static const char *mp4iso = "mp4iso";
 static SConfigVariable MyConfigVariables[] = {

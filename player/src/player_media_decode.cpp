@@ -35,6 +35,7 @@
 #include "our_config_file.h"
 //#define DEBUG_DECODE 1
 //#define DEBUG_DECODE_MSGS 1
+#pragma GCC diagnostic ignored "-Wformat"
 /*
  * start_decoding - API function to call for telling the decoding
  * task it can start

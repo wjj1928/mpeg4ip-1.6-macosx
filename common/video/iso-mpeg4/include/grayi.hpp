@@ -47,7 +47,7 @@ typedef int PixelI;
 #endif
 
 class CVideoObjectPlane;
-
+#pragma GCC diagnostic ignored "-Wtautological-undefined-compare"
 class CIntImage
 {
 public:

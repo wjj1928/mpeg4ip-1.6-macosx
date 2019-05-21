@@ -20,7 +20,7 @@
  */
 
 #include "mp4common.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 MP4Property::MP4Property(const char* name)
 {
 	m_name = name;

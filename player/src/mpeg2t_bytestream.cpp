@@ -28,7 +28,7 @@
 #include "mp4av.h"
 //#define DEBUG_MPEG2T_FRAME 1
 //#define DEBUG_MPEG2T_PSTS 1
-
+#pragma GCC diagnostic ignored "-Wformat"
 static inline bool convert_psts (mpeg2t_es_t *es_pid,
 				 mpeg2t_stream_t *sptr,
 				 mpeg2t_frame_t *fptr)

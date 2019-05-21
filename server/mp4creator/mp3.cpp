@@ -26,7 +26,7 @@
  */
 
 #include <mp4creator.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static bool LoadNextMp3Header(FILE* inFile, u_int32_t* pHdr, bool allowLayer4)
 {
 	u_int8_t state = 0;

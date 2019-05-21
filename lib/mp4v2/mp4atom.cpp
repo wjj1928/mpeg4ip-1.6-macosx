@@ -33,7 +33,7 @@
 
 #include "mp4common.h"
 #include "atoms.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 MP4AtomInfo::MP4AtomInfo(const char* name, bool mandatory, bool onlyOne) 
 {
 	m_name = name;

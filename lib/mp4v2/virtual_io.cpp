@@ -23,7 +23,7 @@
 
 #include "mp4common.h"
 #include "virtual_io.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 /* --------- Virtual IO for FILE * --------- */
 
 u_int64_t FILE_GetFileLength(void *user)

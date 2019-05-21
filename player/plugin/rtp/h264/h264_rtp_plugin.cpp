@@ -23,7 +23,7 @@
 #include "rtp/rtp.h"
 #include "mp4av/mp4av_h264.h"
 //#define DEBUG_H264
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 #define h264_message iptr->m_vft->log_msg
 static const char *h264rtp="h264rtp";
 

@@ -70,7 +70,7 @@
 #include "basic.hpp"
 #include "dataStruct.hpp"
 #include "msg.hpp"
-
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
 /* The filename where user messages (non-error) are written to */
 FILE *ofp=stdout;
 

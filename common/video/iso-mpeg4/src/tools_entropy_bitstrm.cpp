@@ -59,7 +59,8 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wmismatched-new-delete"
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 UInt getbit (UInt data, UInt position, UInt num) // get the num-bit field of x starting from position p
 {
 	return ((data >> (position + 1 - num)) & ~(~0 << num));

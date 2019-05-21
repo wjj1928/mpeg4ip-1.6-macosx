@@ -21,7 +21,7 @@
 
 #include "quicktime.h"
 
-
+#pragma GCC diagnostic ignored "-Wreturn-type"
 int quicktime_rtp_init(quicktime_rtp_t *rtp)
 {
         rtp->string = NULL;

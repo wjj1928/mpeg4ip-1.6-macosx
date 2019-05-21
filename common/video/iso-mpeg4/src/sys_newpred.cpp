@@ -69,7 +69,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #define _CRTDBG_MAP_ALLOC
 //CMemoryState CMemOld, CMemNew;
 #endif
-
+#pragma GCC diagnostic ignored "-Wparentheses-equality"
 CNewPred::CNewPred()
 {
 	m_iVopID = 0;

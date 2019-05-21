@@ -59,7 +59,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #endif // __MFC_
 
 #define _FOR_GSSP_
-
+#pragma GCC diagnostic ignored "-Wdangling-else"
 Void CVideoObject::warpYA (const CPerspective2D& persp, const CRct& rctWarpedBound, UInt accuracy) 
 // warp m_pvopcSptQ's Y and A components to m_pvopcCurrQs
 {

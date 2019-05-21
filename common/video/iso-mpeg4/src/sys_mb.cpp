@@ -60,7 +60,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wmismatched-new-delete"
 // must be called with following conditions:
 // transp status must be set
 // dct mode must be set

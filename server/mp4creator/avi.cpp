@@ -26,6 +26,7 @@
 
 #include <mp4creator.h>
 #include <avilib.h>
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static void set_es_config (MP4FileHandle mp4File, 
 			   MP4TrackId trackId, 
 			   uint8_t *pBuffer, 

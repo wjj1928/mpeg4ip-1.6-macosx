@@ -61,7 +61,7 @@
 **/
 
 #include "mp4common.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 bool MP4File::GetMetadataByIndex(u_int32_t index,
                                  char** ppName,
                                  u_int8_t** ppValue, u_int32_t* pValueSize)

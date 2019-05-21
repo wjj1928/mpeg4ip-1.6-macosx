@@ -1,4 +1,6 @@
 #include  "audio_convert.h"
+
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 // Note - this is from a52dec.  It seems to be a fast way to
 // convert floats to int16_t.  However, simply casting, then comparing
 // would probably work as well

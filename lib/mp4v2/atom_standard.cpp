@@ -21,7 +21,7 @@
 
 #include "mp4common.h"
 #include "atoms.h"
-
+#pragma GCC diagnostic ignored "-Wunused-const-variable"
 static const char name[5]={0251,'n', 'a', 'm', '\0'};
 static const char art[5]={0251,'A', 'R', 'T', '\0'};
 static const char wrt[5]={0251,'w', 'r', 't', '\0'};

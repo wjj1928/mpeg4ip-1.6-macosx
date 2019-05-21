@@ -25,7 +25,7 @@
 
 #include <mp4creator.h>
 #include <mp4av_h264.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 typedef struct nal_reader_t {
   FILE *ifile;
   uint8_t *buffer;

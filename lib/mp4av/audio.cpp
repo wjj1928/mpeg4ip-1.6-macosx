@@ -25,7 +25,7 @@
  */
 
 #include <mp4av_common.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static MP4AV_Mp3Header GetMp3Header(
 	MP4FileHandle mp4File, 
 	MP4TrackId audioTrackId)

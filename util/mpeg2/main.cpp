@@ -1,6 +1,6 @@
 #include "mpeg4ip.h"
 #include "mp4av.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 int main (int argc, char **argv)
 {
 #define MAX_BUFFER 65536

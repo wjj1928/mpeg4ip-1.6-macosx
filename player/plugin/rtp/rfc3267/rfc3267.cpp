@@ -22,7 +22,7 @@
 #include "rfc3267.h"
 #include "mp4av.h"
 #include "rtp.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 #define rfc3267_message iptr->m_vft->log_msg
 static const char *rfc3267rtp="rfc3267";
 //#define DEBUG_RFC3267 1

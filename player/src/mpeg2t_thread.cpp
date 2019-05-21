@@ -36,7 +36,8 @@
 #include "ip_port.h"
 #include "player_rtsp.h"
 
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
+#pragma GCC diagnostic ignored "-Wtautological-compare"
 #ifdef _WIN32
 DEFINE_MESSAGE_MACRO(mpeg2t_message, "mpeg2t")
 #else

@@ -57,7 +57,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #endif
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wdangling-else"
 const Int rgiBlkOffsetX [] = {0, BLOCK_SIZE, 0, BLOCK_SIZE};
 const Int rgiBlkOffsetY [] = {0, 0, BLOCK_SIZE, BLOCK_SIZE};
 const Int rgiBlkOffsetPixel [] = {0, OFFSET_BLK1, OFFSET_BLK2, OFFSET_BLK3};

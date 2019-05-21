@@ -28,7 +28,7 @@
 #include "mp4creator.h"
 #include "mpeg4ip_getopt.h"
 #include "mpeg.h"
-
+#pragma GCC diagnostic ignored "-Wsometimes-uninitialized"
 // forward declarations
 // AMR defines
 #define AMR_TYPE_NONE 0

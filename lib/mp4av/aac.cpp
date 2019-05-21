@@ -39,7 +39,8 @@
  * 	DependsOnCoreCoder		1 bit (always 0)
  * 	ExtensionFlag 			1 bit (always 0)
  */
-
+#pragma GCC diagnostic ignored "-Wformat"
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 extern "C" uint8_t MP4AV_AacConfigGetAudioObjectType (uint8_t *pConfig)
 {
   return pConfig[0] >> 3;

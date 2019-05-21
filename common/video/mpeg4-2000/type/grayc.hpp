@@ -55,9 +55,9 @@ typedef unsigned char PixelC;
 #ifndef MAX_NUM_CONTOUR
 #define MAX_NUM_CONTOUR 200
 #endif
-
 class CVideoObjectPlane;
 
+#pragma GCC diagnostic ignored "-Wtautological-undefined-compare"
 class CU8Image
 {
 public:

@@ -51,7 +51,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #endif // __MFC_
 
 #define irowNull		(-1)
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 __inline static void SwapRow(Double *rgcoeff, Double *rgrhs, Int crow,
 	Int irow1, Int irow2);
 __inline static void EliminateColumn(Double *rgcoeff, Double *rgrhs, Int crow,

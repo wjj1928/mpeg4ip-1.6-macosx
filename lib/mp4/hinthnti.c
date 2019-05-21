@@ -21,7 +21,7 @@
 
 #include "quicktime.h"
 
-
+#pragma GCC diagnostic ignored "-Wreturn-type"
 int quicktime_hint_hnti_init(quicktime_hint_hnti_t *hnti)
 {
 	quicktime_sdp_init(&(hnti->sdp));

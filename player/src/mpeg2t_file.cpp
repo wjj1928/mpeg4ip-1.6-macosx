@@ -31,7 +31,7 @@
 #include "mpeg2f_bytestream.h"
 #include "mpeg2t_file.h"
 #include "mp4av.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 //#define DEBUG_MPEG2F_SEARCH 1
 #ifdef _WIN32
 DEFINE_MESSAGE_MACRO(mpeg2f_message, "mpeg2f")

@@ -26,7 +26,7 @@
 #include "mpeg2ps_private.h"
 #include <mp4av.h>
 #include <mp4av_h264.h>
-
+#pragma GCC diagnostic ignored "-Wenum-conversion"
 //#define DEBUG_LOC 1
 //#define DEBUG_STATE 1
 static const uint lpcm_freq_tab[4] = {48000, 96000, 44100, 32000};

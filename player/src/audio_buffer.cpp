@@ -26,7 +26,8 @@
 #include "player_session.h"
 #include "player_util.h"
 #include "our_config_file.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
+#pragma GCC diagnostic ignored "-Wself-assign-field"
 //#define DEBUG_AUDIO_FILL 1
 //#define DEBUG_AUDIO_CALLBACK 1
 //#define DEBUG_AUDIO_TIMING 1

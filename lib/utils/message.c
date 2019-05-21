@@ -23,6 +23,7 @@
 #if _WIN32
 #include "mpeg4ip_sdl_includes.h"
 
+
 SDL_mutex *outex;
 static int initialized = 0;
 static void init_local_mutex (void)
@@ -124,7 +125,7 @@ void message (int loglevel, const char *lib, const char *fmt, ...)
   va_end(ap);
   fprintf(outfile, "\n");
 }
-
+#pragma GCC diagnostic warning "-Wformat-nonliteral"
 void library_message (int loglevel,
 		      const char *lib,
 		      const char *fmt,
@@ -173,4 +174,4 @@ void library_message (int loglevel,
   if (fmt[strlen(fmt) - 1] != '\n')
      fprintf(outfile, "\n");
 }
-
+#pragma GCC diagnostic warning "-Wformat-nonliteral"

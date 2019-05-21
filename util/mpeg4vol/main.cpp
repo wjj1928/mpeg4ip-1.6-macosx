@@ -5,7 +5,7 @@
 #include "mp4v2/mp4.h"
 #include "mpeg4ip_bitstream.h"
 #include "mpeg4ip_getopt.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 extern void decode_audio (uint8_t *vol, uint32_t len);
 
 static uint8_t tohex (char a)

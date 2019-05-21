@@ -34,7 +34,7 @@
 #include <sdp/sdp.h>
 #include "our_msg_queue.h"
 #include "ip_port.h"
-
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
 typedef enum {
   SESSION_PAUSED,
   SESSION_BUFFERING,

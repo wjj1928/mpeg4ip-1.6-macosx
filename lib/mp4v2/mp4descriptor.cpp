@@ -20,7 +20,7 @@
  */
 
 #include "mp4common.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 MP4Descriptor::MP4Descriptor(u_int8_t tag) {
 	m_tag = tag;
 	m_pParentAtom = NULL;

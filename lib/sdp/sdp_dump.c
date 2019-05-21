@@ -30,7 +30,7 @@
 #include "sdp.h"
 #include <time.h>
 #include "sdp_decode_private.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 static void time_repeat_dump (time_repeat_desc_t *trptr)
 {
   int morethan1;

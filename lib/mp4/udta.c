@@ -1,7 +1,7 @@
 #include "quicktime.h"
 
 #define DEFAULT_INFO "Made with Quicktime for Linux"
-
+#pragma GCC diagnostic ignored "-Wreturn-type"
 int quicktime_udta_init(quicktime_udta_t *udta)
 {
 	udta->copyright = 0;

@@ -35,7 +35,7 @@ DEFINE_MESSAGE_MACRO(mpa_message, "mparobust")
 #else
 #define mpa_message(loglevel, fmt...) message(loglevel, "mparobust", fmt)
 #endif
-
+#pragma GCC diagnostic ignored "-Wformat"
 CRfc3119RtpByteStream::CRfc3119RtpByteStream (unsigned int rtp_pt,
 					      format_list_t *fmt,
 					      int ondemand,

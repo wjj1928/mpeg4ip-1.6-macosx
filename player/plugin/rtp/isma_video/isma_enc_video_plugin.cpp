@@ -24,7 +24,7 @@
 #include "rtp/rtp.h"
 
 //#define DEBUG_ISMA_AAC
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 #define isma_message iptr->m_vft->log_msg
 
 static rtp_check_return_t check (lib_message_func_t msg, 

@@ -23,7 +23,7 @@
  */
 #include "mpeg2_ps.h"
 #include "mpeg4ip_getopt.h"
-
+#pragma GCC diagnostic ignored "-Wformat"
 int main(int argc, char** argv)
 {
   char* usageString = "[--video] [--audio] <file-name>\n";

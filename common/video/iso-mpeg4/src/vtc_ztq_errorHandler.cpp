@@ -59,7 +59,7 @@
 #include "basic.hpp"
 #include "dataStruct.hpp"
 #include "msg.hpp"
-
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
 Void CVTCCommon::errorHandler(Char *s, ...)
 {
   va_list ap;

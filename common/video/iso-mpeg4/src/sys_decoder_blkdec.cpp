@@ -80,7 +80,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 
 #define new DEBUG_NEW				   
 #endif // __MFC_
-
+#pragma GCC diagnostic ignored "-Wlogical-op-parentheses"
 // HHI  Schueuer
 CInvScanSelectorForSADCT::CInvScanSelectorForSADCT(Int **rgiCurrMBCoeffWidth) :
 	m_rgiCurrMBCoeffWidth(rgiCurrMBCoeffWidth)

@@ -25,7 +25,7 @@
 
 
 #include "mp4creator.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 // Default timescale for H.263 (1000ms)
 #define H263_TIMESCALE 1000
 // Default H263 frame rate (30fps)

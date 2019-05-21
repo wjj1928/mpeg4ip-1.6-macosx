@@ -34,7 +34,7 @@
 #define DEBUG_SYNC_STATE 1
 //#define DEBUG_SYNC_MSGS 1
 //#define DEBUG_SYNC_SDL_EVENTS 1
-
+#pragma GCC diagnostic ignored "-Wformat"
 #ifdef _WIN32
 DEFINE_MESSAGE_MACRO(sync_message, "avsync")
 #else

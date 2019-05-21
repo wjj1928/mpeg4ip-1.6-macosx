@@ -25,7 +25,7 @@
 
 #define r2429_message iptr->m_vft->log_msg
 //static const char *r2429rtp="r2429rtp";
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static rtp_check_return_t check (lib_message_func_t msg, 
 				 format_list_t *fmt, 
 				 uint8_t rtp_payload_type,

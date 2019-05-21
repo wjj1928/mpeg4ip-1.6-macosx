@@ -365,7 +365,7 @@ AC_ARG_ENABLE(player,
   no)  player=false ;;
   *)   AC_MSG_ERROR(bad value ${enableval} for --enable-player) ;;
 esac],
-[player=true])
+[player=false])
 AM_CONDITIONAL(PLAYER, [test x$player = xtrue])
 
 #autoconf is slightly confusing here: 
@@ -769,7 +769,7 @@ if test x$enable_mmx = xyes; then
 
    if test x$USENASM = xtrue; then
 	AC_MSG_CHECKING(nasm version...)
-	BILLSNASM_arg=`nasm -r | tr '.' ' '`
+	BILLSNASM_arg=`nasm -v | tr '.' ' '`
         BILLSNASM_ret=`util/testnasm.sh $BILLSNASM_arg`
 	if test x$BILLSNASM_ret = x"yes"; then
 	   USENASM=true

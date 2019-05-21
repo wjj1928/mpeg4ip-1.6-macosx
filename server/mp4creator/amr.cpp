@@ -23,7 +23,7 @@
  */
 
 #include <mp4creator.h>
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 #define AMR_HEADER_LENGTH 6
 #define AMR_MAGIC_NUMBER "#!AMR\n"
 #define AMR_FIXED_TIMESCALE 8000

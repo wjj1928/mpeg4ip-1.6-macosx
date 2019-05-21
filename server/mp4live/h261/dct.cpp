@@ -40,7 +40,8 @@ static const char rcsid[] =
 #include "bsd-endian.h"
 #include "dct.h"
 #include <stdio.h>
-
+#pragma GCC diagnostic ignored "-Wshift-op-parentheses"
+#pragma GCC diagnostic ignored "-Wunused-const-variable"
 /* conditional declaration */
 #if MMX_DCT_ENABLED
 void domidct8x8llmW(short *inptr, short *quantptr, int *wsptr,

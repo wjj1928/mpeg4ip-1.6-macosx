@@ -70,7 +70,7 @@ static char BASED_CODE THIS_FILE[] = __FILE__;
 #else 
 #define FULLNAME(dir, filename) strcpy (pch, "/"#dir"/"#filename);
 #endif
-
+#pragma GCC diagnostic ignored "-Wmismatched-new-delete"
 class CNode
 {
 friend class CHuffmanTree;

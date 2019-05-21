@@ -26,7 +26,7 @@
 #include <signal.h>
 #endif
 #include "our_config_file.h"
-
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 static void c_mouse_click (void *ifptr, uint16_t x, uint16_t y)
 {
   CHrefTextRenderer *h = (CHrefTextRenderer *)ifptr;
